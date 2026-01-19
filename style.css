@@ -1,0 +1,114 @@
+body { 
+    margin: 0; 
+    min-height: 100vh; 
+    display: grid;
+    place-items: center; 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    background: #ff69b4;
+}
+.card {
+    width: min(420px, 92vw); 
+    padding: 28px 24px; 
+    border-radius: 20px; 
+    background: rgba(255, 255, 255, 0.82); 
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+}
+button { 
+    padding: 12px 18px; 
+    border: none; 
+    border-radius: 14px;
+    font-weight: 600; 
+    font-size: 16px;
+    cursor: pointer; 
+    width: 100%; 
+    margin-top: 14px; 
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+    transition: transform 0.08s ease, filter 0.2s ease;
+}
+button:hover {
+    background: #ff6f91;
+}
+button:active {
+    transform: scale(0.96);
+}
+body.happy { 
+    background: #ffd6e7;
+}
+body.excited { 
+    background: #ffe7b3; 
+}
+body.sleepy { 
+    background: #cfe3ff; 
+}
+body.curious { 
+    background: #d7ffd9; 
+}
+button.happy { 
+    background: #ff8fc7; 
+}
+button.excited { 
+    background: #ffb347; 
+}
+button.sleepy { 
+    background: #8fbaff; 
+}
+button.curious { 
+    background: #7fe3a1; 
+} 
+.habits { 
+    margin-top: 18px; 
+    text-align: left; 
+}
+.habits h2 {
+    margin: 0 0 10px 0; 
+    font-size: 16px; 
+}
+.habitForm { 
+    display: flex; 
+    gap: 10px;
+    margin-bottom: 10px; 
+}
+#habitInput { 
+    flex: 1; 
+    padding: 10px 12px; 
+    border-radius: 10px; 
+    border: 1px solid rgba(0,0,0.12); 
+    outline: none;
+}
+#addHabitBtn { 
+    width: auto; 
+    padding: 10px 12px;
+}
+#habitList { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+}
+.habitItem { 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 10px; 
+    padding: 10px 12px;
+    margin-bottom: 8px; 
+    border-radius: 12px; 
+    background: rgba (255, 255, 255, 0.7); 
+    border: 1px solid rgba(0,0,0,0.08);
+}
+.habitLeft { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px;
+}
+.habitDone { 
+    text-decoration: line-through; 
+    opacity: 0.65; 
+}
+.smallBtn { 
+    width: auto; 
+    padding: 8px 10px;
+    font-size: 14px;
+}

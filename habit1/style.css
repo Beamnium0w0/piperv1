@@ -1,0 +1,104 @@
+* { box-sizing: border-box; } 
+body { 
+    margin: 0; 
+    min-height: 100vh;
+    display: grid; 
+    place-items: center; 
+    font-family: Arial, sans-serif; 
+    background: #f4f4f7;    
+}
+.app { 
+    width: min(520px, 92vw); 
+    background: white; 
+    border-radius: 16px; 
+    padding: 18px; 
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+.topbar { 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    gap: 12px;
+}
+h1 { 
+    margin: 0; 
+    font-size: 22px; 
+}
+.row { 
+    display: flex; 
+    gap: 10px; 
+    margin-top: 14px;
+}
+input { 
+    flex: 1; 
+    padding: 12px 12px; 
+    border-radius: 12px;
+    border: 1px solid #ddd; 
+    outline: none; 
+}
+button { 
+    padding: 12px 14px;
+    border-radius: 12px; 
+    border: none;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+}
+button.ghost { 
+    background: transparent; 
+    border: 1px solid #ddd;
+    color: #333;
+}
+.stats {
+    margin: 12px 2px 0; 
+    color: #555;
+    font-size: 14px;
+}
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 14px 0 0;
+    display: grid;
+    gap: 10px;
+}
+.item {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    gap: 10px; 
+    padding: 12px 14px; 
+    border: 1px solid #eee;
+    border-radius: 12px; 
+}
+.left { 
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+}
+.item.done .text { 
+    text-decoration: line-through; 
+    opacity: 0.6;
+}
+.small {
+    padding: 8px 10px;
+    border-radius: 10px; 
+    border: 1px solid #ddd; 
+    background: transparent;
+    cursor: pointer;
+} 
+.piperLine{ 
+    margin: 10px 0 14px; 
+    font-size: 14px; 
+    opacity: 0.9;
+}
+#piperLine { 
+    transition: transform 200ms ease, opacity 200ms ease;
+}
+#piperLine.piper-pop { 
+    animation:piperPop 350ms ease;
+}
+@keyframes piperPop {
+    0% { transform: scale(1); opacity: 0.6; }
+    50% { transform: scale(1.08); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
